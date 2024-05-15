@@ -34,6 +34,22 @@ export default function MainPage() {
   const handleScrollToContact = () => {
     contactRef.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  function openLinkedInApp(e) {
+    const isMobile =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+    if (isMobile) {
+      e.preventDefault(); // Prevent default behavior of opening in a new window
+      if (/Android/i.test(navigator.userAgent)) {
+        window.location.href =
+          "intent://profile/arsh-meharwal-9657591a7/#Intent;package=com.linkedin.android;scheme=https;end";
+      } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        window.location.href = "linkedin://profile/arsh-meharwal-9657591a7";
+      }
+    }
+  }
   return (
     <>
       <Disclosure as="nav" className="bg-gray-900">
@@ -147,6 +163,52 @@ export default function MainPage() {
             <p className="lg:text-3xl text-lg lg:pt-8 pt-4 text-left lg:pl-0 pl-6">
               I am a Software developer and Movie enthusiast.
             </p>
+            <div className="flex flex-row gap-8 justify-center items-center lg:mt-8 mt-4">
+              <a
+                className="lg:text-3xl text-lg  py-2 px-2 text-left bg-black rounded-3xl cursor-pointer"
+                href="https://github.com/arsh-meharwal"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="#ffff"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-github"
+                >
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+              </a>
+              <a
+                className="lg:text-3xl text-lg 8 py-2 px-2 text-left  bg-blue-600 rounded-sm cursor-pointer"
+                href="https://www.linkedin.com/in/arsh-meharwal-9657591a7/"
+                onClick={(e) => openLinkedInApp(e)}
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="#ffffff"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin"
+                >
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+            </div>
           </div>
           <div className="flex flex-col lg:pt-12 lg:pr-0 mr-4 lg:py-0 mb-12">
             <div className="lg:h-64 lg:w-64 rounded-full overflow-hidden lg:mb-12  bg-gray-200 border-solid border-4 border-orange-400">
@@ -157,7 +219,7 @@ export default function MainPage() {
               />
             </div>
 
-            <div className="lg:py-0 py-8">
+            <div className="lg:py-0 my-4">
               <button className="button-51" onClick={handleScrollToCV}>
                 View CV
               </button>

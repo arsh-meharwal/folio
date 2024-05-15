@@ -21,9 +21,10 @@ function Welcome() {
             </div>
             <p className="lg:text-9xl lg:text-left  typewriter">meharwal.</p>
             <p className="lg:text-3xl lg:pt-8 lg:text-left">
-              I am a Web developer and movie enthusiast.
+              I am a Web developer and movie enthusdsdsdiast.
             </p>
           </div>
+          <div className="text-white">Github</div>
           <div className="flex flex-col lg:pt-12">
             <div className="lg:h-64 lg:w-64 rounded-full overflow-hidden lg:mb-12  bg-gray-200 border-solid border-4 border-orange-400">
               <img
@@ -40,6 +41,7 @@ function Welcome() {
             </div>
           </div>
         </div>
+
         <Project />
         <div ref={cvSectionRef} className="cv-section justify-center">
           <CvPage />
