@@ -47,6 +47,9 @@ export default function MainPage() {
           "linkedin://profile/arsh-meharwal-9657591a7/#Intent;package=com.linkedin.android;scheme=https;end";
       } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
         window.location.href = "linkedin://profile/arsh-meharwal-9657591a7";
+      } else {
+        window.location.href =
+          "https://www.linkedin.com/in/arsh-meharwal-9657591a7/";
       }
     }
   }
