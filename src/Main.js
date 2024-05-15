@@ -44,7 +44,7 @@ export default function MainPage() {
       e.preventDefault(); // Prevent default behavior of opening in a new window
       if (/Android/i.test(navigator.userAgent)) {
         window.location.href =
-          "intent://profile/arsh-meharwal-9657591a7/#Intent;package=com.linkedin.android;scheme=https;end";
+          "linkedin://profile/arsh-meharwal-9657591a7/#Intent;package=com.linkedin.android;scheme=https;end";
       } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
         window.location.href = "linkedin://profile/arsh-meharwal-9657591a7";
       }
