@@ -1,48 +1,17 @@
-// import React, { useState } from "react";
-// import "./App.css"; // Import your CSS file for styling
-
-// function CvPage() {
-//   const [isExpanded, setIsExpanded] = useState(false);
-
-//   const handleClick = () => {
-//     setIsExpanded(!isExpanded); // Toggle the expanded state
-//   };
-
-//   return (
-//     <div className="container ">
-//       <div
-//         className={`image-section ${isExpanded ? "expanded" : ""} `}
-//         onClick={handleClick}
-//       >
-//         <img src="/Resume.jpg" alt="Clickable Image" className="image" />
-//       </div>
-//       {isExpanded && (
-//         <div className="expanded-content">
-//           {/* Content to display when the image is expanded */}
-//           <p>Expanded content goes here...</p>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default CvPage;
-
 import React, { useState } from "react";
 import "./App.css"; // Import your CSS file for styling
 
 function CvPage() {
   const [isHovered, setIsHovered] = useState(false);
   const handleViewFullScreen = () => {
-    // Replace "/Resume.jpg" with the actual URL of the image
-    window.open("/Resume.jpg", "_blank");
+    window.open("/Resume.png", "_blank");
   };
   const handleDownload = () => {
-    window.open("/Arsh-Resume.pdf", "_blank");
-    const pdfUrl = "/Resume (1).pdf";
+    window.open("/Arsh-Resume.docx", "_blank");
+    const pdfUrl = "/Arsh-Resume.docx";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "Arsh-Meharwal-Resume.pdf"; // Set the filename for the downloaded file
+    link.download = "/Arsh-Resume.docx"; // Set the filename for the downloaded file
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -63,7 +32,7 @@ function CvPage() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <img src="/Resume.jpg" alt="Clickable Image" className="image" />
+            <img src="/Resume.png" alt="Clickable Image" className="image" />
 
             {isHovered && (
               <div>
