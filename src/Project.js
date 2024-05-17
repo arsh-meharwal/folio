@@ -16,7 +16,7 @@ function Project() {
       text4:
         "- Implements authentication and authorization mechanisms using JSON Web Tokens (JWT) for access control.",
       buttonLink:
-        "https://bug-tracker-app-backend-arsh-meharwals-projects.vercel.app",
+        "https://bug-tracker-orange.vercel.app/login",
     },
     {
       id: 2,
