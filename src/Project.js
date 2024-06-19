@@ -104,22 +104,22 @@ function Project() {
                     <p className="mt-4 text-sm">{item.text2}</p>
                     <p className="mt-4 text-sm">{item.text3}</p>
                     <p className="mt-4 text-sm">{item.text4}</p>
-                  <div className ="flex flex-row justify-center items-center">
+                  <div className ="flex flex-row justify-center items-center gap-4">
                     <a
                       href={item.buttonLink}
-                      className="mt-11 inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600"
+                      className="mt-11 inline-block px-6 py-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Live 
+                      Live <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio-tower"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg>
                     </a>
                     <a
                       href={item.github}
-                      className="mt-11 inline-block px-6 py-3 bg-white text-black rounded hover:bg-black hover:text-white"
+                      className="mt-11 inline-block px-6 py-3 bg-white text-black rounded-xl hover:bg-black hover:text-white"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Code
+                      Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                     </a>
                   </div>
                   </div>
