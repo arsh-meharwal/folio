@@ -104,7 +104,7 @@ function Project() {
                     <p className="mt-4 text-sm">{item.text2}</p>
                     <p className="mt-4 text-sm">{item.text3}</p>
                     <p className="mt-4 text-sm">{item.text4}</p>
-                  <div className ="flex flex-row">
+                  <div className ="flex flex-row justify-center items-center">
                     <a
                       href={item.buttonLink}
                       className="mt-11 inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600"
@@ -115,7 +115,7 @@ function Project() {
                     </a>
                     <a
                       href={item.github}
-                      className="mt-11 inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-white"
+                      className="mt-11 inline-block px-6 py-3 bg-white text-black rounded hover:bg-black hover:text-white"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
