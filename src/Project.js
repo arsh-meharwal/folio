@@ -17,6 +17,7 @@ function Project() {
         "- Implements authentication and authorization mechanisms using JSON Web Tokens (JWT) for access control.",
       buttonLink:
         "https://bug-tracker-orange.vercel.app",
+      github: "https://github.com/arsh-meharwal/bug-tracker-app-backend"
     },
     {
       id: 2,
@@ -34,6 +35,7 @@ function Project() {
         "- Authorization mechanism using JSON Web Tokens (JWT) for user authentication and access control.",
       description: "Description 1",
       buttonLink: "https://example.com",
+      github: "https://github.com/arsh-meharwal/MERN-ecommerce-Backend"
     },
     {
       id: 3,
@@ -51,6 +53,7 @@ function Project() {
         "- Search bar and detail page functionality implemented using React Router.",
       description: "Description 1",
       buttonLink: "https://famous-cascaron-b93f29.netlify.app",
+      github: "https://github.com/arsh-meharwal/Cocktail-Finder-App"
     },
     {
       id: 4,
@@ -65,6 +68,7 @@ function Project() {
       text4: "- Search bar implemented using React Router.",
       description: "Description 1",
       buttonLink: "https://spectacular-halva-eed520.netlify.app",
+      github: "https://github.com/arsh-meharwal/Unsplash"
     },
   ];
   const [hoveredItemId, setHoveredItemId] = useState(null);
@@ -100,14 +104,24 @@ function Project() {
                     <p className="mt-4 text-sm">{item.text2}</p>
                     <p className="mt-4 text-sm">{item.text3}</p>
                     <p className="mt-4 text-sm">{item.text4}</p>
+                  <div className ="flex flex-row">
                     <a
                       href={item.buttonLink}
                       className="mt-11 inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View Website
+                      Live 
                     </a>
+                    <a
+                      href={item.github}
+                      className="mt-11 inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-white"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Code
+                    </a>
+                  </div>
                   </div>
                 </div>
               )}
