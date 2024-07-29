@@ -55,7 +55,7 @@ export default function MainPage() {
   }
   return (
     <>
-      <Disclosure as="nav" className="bg-gray-900">
+      <Disclosure as="nav" className="bg-transparent">
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
