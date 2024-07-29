@@ -4,7 +4,7 @@ import MainPage from "./Main";
 
 function App() {
   return (
-    <div className="App bg-gray-900 scroll-smooth">
+    <div className="App  scroll-smooth">
       <MainPage />
       <Footer />
     </div>
